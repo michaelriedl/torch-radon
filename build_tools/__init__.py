@@ -49,7 +49,7 @@ CXX_ADDITIONAL_FLAGS = []
 
 
 # 80, 86 are only for CUDA 11
-def build(compute_capabilites=(60, 70, 75), verbose=False, cuda_home="/usr/local/cuda", cxx="g++"):
+def build(compute_capabilites=(53, 60, 70, 75), verbose=False, cuda_home="/usr/local/cuda", cxx="g++"):
     nvcc = f"{cuda_home}/bin/nvcc"
     include_dirs = ["./include"]
 
